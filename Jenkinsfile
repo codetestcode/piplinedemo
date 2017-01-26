@@ -1,6 +1,14 @@
-node { // <1>
-    stage('Build') { // <2>
-        sh 'echo build' // <3>
+node { node {
+      stage('Checkout'){
+        sh 'code checkout'
+      }
+      stage('Lint') {
+        sh 'lint source code'
+      }
+      
+    }
+    stage('Build') {
+        sh 'echo build'
     }
 
     stage('Test') {
