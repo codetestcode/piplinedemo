@@ -1,12 +1,10 @@
-node { node {
+node {
       stage('Checkout'){
-        sh 'code checkout'
+        sh 'echo code checkout'
       }
       stage('Lint') {
-        sh 'lint source code'
+        sh 'echo lint source code'
       }
-      
-    }
     stage('Build') {
         sh 'echo build'
     }
