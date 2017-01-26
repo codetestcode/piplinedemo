@@ -16,34 +16,34 @@ node {
     stage('Deploy-Dev') {
         sh 'echo delpoy'
     }
-    stage('Checkout'){
+    stage('Checkout-Dev'){
       sh 'echo code checkout'
     }
-    stage('Lint') {
+    stage('Lint-Dev') {
       sh 'echo lint source code'
     }
-  stage('Build') {
+  stage('Build-Dev') {
       sh 'echo build'
   }
 
-  stage('Test') {
+  stage('Test-QA') {
       sh 'echo test'
   }
 
   stage('Deploy-QA') {
       sh 'echo delpoy'
   }
-  stage('Checkout'){
+  stage('Checkout-QA'){
     sh 'echo code checkout'
   }
-  stage('Lint') {
+  stage('Lint-QA') {
     sh 'echo lint source code'
   }
-stage('Build') {
+stage('Build-QA') {
     sh 'echo build'
 }
 
-stage('Test') {
+stage('Test-QA') {
     sh 'echo test'
 }
 
