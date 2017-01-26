@@ -4,7 +4,7 @@ node { // <1>
     }
 
     stage('Test') {
-        sh 'python test_random.py'
+        sh 'echo test'
     }
 
     stage('Deploy') {
